@@ -1,0 +1,31 @@
+<div class="page-info-section set-bg" style="background-image: url(img/page-bg/1.jpg)">
+  <div class="container">
+    <div class="site-breadcrumb">
+      <a [routerLink]="['/home']" routerLinkActive="router-link-active">Trang chủ</a>
+      <span>Sự kiện</span>
+    </div>
+  </div>
+</div>
+
+<table class="table table-striped">
+  <thead class="thead-dark">
+    <tr>
+      <th>Tên sự kiện</th>
+      <th>Thời gian</th>
+      <th>Địa chỉ</th>
+      <th style="padding-right: 50px;"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let pd of service.list">
+      <td>{{pd.Ten}}</td>
+      <td>{{pd.Thoigian}}</td>
+      <td>{{pd.Diachi}}</td>
+      <!-- <td>
+        <i class="far fa-trash-alt fa-lg text-danger" (click) = "onDelete(pd.Id)">
+      </i>(click)="populateForm(pd)"
+      </td> -->
+    </tr>
+  </tbody>
+</table>
+

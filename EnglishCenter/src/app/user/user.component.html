@@ -1,0 +1,63 @@
+<div class="page-info-section set-bg" style="background-image: url(img/page-bg/1.jpg)">
+  <div class="container">
+    <div class="site-breadcrumb">
+      <a [routerLink]="['/home']" routerLinkActive="router-link-active">Trang chủ</a>
+      <span>Cá nhân</span>
+    </div>
+  </div>
+</div>
+
+<div class="wrapper">
+  <div class="row content">
+      <div class="col-md-4 profile">
+          <div class="d-flex flex-column align-items-center text-center">
+              <img class="rounded-circle" width="150px" src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg">
+          </div>
+          <div class="d-flex flex-column align-items-center text-center">
+
+          </div>
+      </div>
+
+      <div class="col-md-8 infomation" *ngIf="this.service.formData1" >
+          <div class="row mt-2">
+              <div class="col-md-4">
+                <label class="label" for="Ho">Họ</label>
+                <input type="text" id="Ho" name="Ho" class="form-control" placeholder="Họ" value="{{this.service.formData1.Ho}}">
+              </div>
+              <div class="col-md-4">
+                <label class="label" for="Tenlot">Tên lót</label>
+                <input type="text" id="Tenlot" name="Tenlot" class="form-control" placeholder="Tenlot" value="{{this.service.formData1.Tenlot}}">
+              </div>
+              <div class="col-md-4">
+                <label class="label" for="Ten">Tên</label>
+                <input type="text" id="Ten" name="Ten" class="form-control" placeholder="Ten" value="{{this.service.formData1.Ten}}">
+            </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col-md-6">
+                <label class="label" for="Gioitinh">Giới tính</label>
+                <input type="text" id="Gioitinh" name="Gioitinh" class="form-control" placeholder="Gioitinh" value="{{this.service.formData1.Gioitinh}}">
+            </div>
+            <div class="col-md-6">
+              <label class="label" for="Ngaysinh">Ngày sinh</label>
+              <input type="text" id="Ngaysinh" name="Ngaysinh" class="form-control" placeholder="Ngaysinh" value="{{this.service.formData1.Ngaysinh}}">
+            </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col-md-6">
+                <label class="label" for="Email">Email</label>
+                <input type="text" id="Email" name="Email" class="form-control" placeholder="Email" value="{{this.service.formData1.Email}}">
+            </div>
+            <div class="col-md-6">
+                <label class="label" for="Diachi">Địa chỉ</label>
+                <input type="text" id="Diachi" name="Diachi" class="form-control" placeholder="Diachi" value="{{this.service.formData1.Diachi}}">
+            </div>
+          </div>
+
+          <div class="button">
+            <button type="submit" name="saveuser" class="btn btn-outline-success save">Save</button>
+            <button type="button" name="cancelupdate" class="btn btn-outline-danger cancel">Cancel</button>
+        </div>
+      </div>
+  </div>
+</div>

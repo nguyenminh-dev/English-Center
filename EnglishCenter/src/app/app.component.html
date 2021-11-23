@@ -1,0 +1,75 @@
+<header class="header-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-3">
+        <div class="site-logo">
+          <img src="img/logo.png" alt="">
+        </div>
+        <div class="nav-switch">
+          <i class="fa fa-bars"></i>
+        </div>
+      </div>
+      <div class="col-lg-9 col-md-9">
+        <a [routerLink]="['/login']" routerLinkActive="router-link-active"  class="site-btn header-btn">Đăng nhập</a>
+        <nav class="main-menu">
+          <ul>
+            <li><a [routerLink]="['/home']" routerLinkActive="router-link-active">Trang chủ</a></li>
+            <li><a [routerLink]="['/course']" routerLinkActive="router-link-active">Khóa học</a></li>
+            <li><a [routerLink]="['/event']" routerLinkActive="router-link-active">Sự kiện</a></li>
+            <li><a [routerLink]="['/support']" routerLinkActive="router-link-active">Hỗ trợ</a></li>
+            <li><a [routerLink]="['/user']" routerLinkActive="router-link-active">Cá nhân</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+<router-outlet></router-outlet>
+
+<!-- footer section -->
+<div class="footer footer-section spad pb-0">
+  <div class="footer-top">
+    <div class="footer-warp">
+      <div class="row">
+        <div class="widget-item">
+          <h4>Trụ sở chính</h4>
+          <ul class="contact-list">
+            <li>Đại học Bách Khoa TPHCM <br>Thủ Đức, TPHCM</li>
+            <li>+123 456 789</li>
+            <li>yourmail@gmail.com</li>
+          </ul>
+        </div>
+        <div class="widget-item">
+          <h4>Trang chủ</h4>
+        </div>
+        <div class="widget-item">
+          <h4>Tuyển Dụng</h4>
+
+        </div>
+        <div class="widget-item">
+          <h4>Tin tức và Sự kiện</h4>
+
+        </div>
+        <div class="widget-item">
+          <h4>Newsletter</h4>
+          <form class="footer-newslatter">
+            <input type="email" placeholder="E-mail">
+            <button class="site-btn">Subscribe</button>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-warp">
+      <ul class="footer-menu">
+        <li><a href="#">Điều khoản và điều kiện</a></li>
+        <li><a href="#">Chính sách hoạt động</a></li>
+        <li><a href="#">Chính sách bảo mật</a></li>
+      </ul>
+
+  </div>
+</div>
+<!-- footer section end -->

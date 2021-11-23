@@ -1,0 +1,22 @@
+.main-div mat-card{
+    padding: 0px;
+}
+.login-form {
+    padding: 40px;
+}
+
+.matcard {
+  border-radius: 10px;
+}
+
+.toolbar {
+  background-color: #d82a4e;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.button-login {
+  color: blue;
+  border-radius: 5px;
+}
